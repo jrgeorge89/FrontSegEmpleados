@@ -1,0 +1,171 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat, repeat;
+  background-image: fixed;
+  background-image: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 750px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#formFooter {
+  background-color: rgb(241, 241, 241);
+  border-top: 1px solid #dce8f1;
+  padding: 15px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.formTitle {
+  margin-top: 10px;
+  color: #3c8dbc;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  min-height: 80%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenFormRegistro {
+  border-radius: 5px 5px 5px 5px;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+#idNombre, #idEmail, #idArea, #idCategoria, #idEmpresa, #idSatisfaccion, #idFavorito {
+  font-size: 13px;
+  margin: 5px;
+  padding: 15px 10px;
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0;
+}
+
+#idCategoria, #idFavorito {
+  padding: 0px 6px;
+}
+
+.contenFormRegistro input[type=text]:focus, select[type=select]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #80BDFF;
+}
+
+
+#idFindNombre, #idFindEmail, #idFindArea, #idFindCategoria, #idFindSatisfaccion, #idFindCompania, #idFindNombreFav, #idFindCategoriaFav, #idFindCompaniaFav {
+  font-size: 13px;
+  padding: 8px 10px;
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0;
+}
+
+
+.modalTitleEditReg {
+  background:#3c8dbc;
+  color:white;
+}
+
+#idEditNombre, #idEditEmail, #idEditArea, #idEditCategoria, #idEditEmpresa, #idEditSatisfaccion, #idEditFavorito, #idEditLogo {
+  font-size: 14px;
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0;
+}
+
+
+/* PARA PANTALALAS MAS PEQUEÑAS */
+@media only screen and (max-width: 767px) {
+
+  #formContent {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .wrapper {
+    padding: 10px;
+  }
+
+}
+
+
+/* ANIMATIONS */
+
+/* Animación Fade-in-down */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Animación Fade-in */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
